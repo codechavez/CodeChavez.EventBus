@@ -23,7 +23,7 @@ jobs:
         run: dotnet build **/CodeChavez.EventBus.Kafka/CodeChavez.EventBus.Kafka.csproj --configuration Release
 
       - name: Package Common
-        run: dotnet pack **/CodeChavez.EventBus.AbstractKafkaions/CodeChavez.EventBus.Kafka.csproj --configuration Release --no-build --output ./artifacts2
+        run: dotnet pack **/CodeChavez.EventBus.Kafka/CodeChavez.EventBus.Kafka.csproj --configuration Release --no-build --output ./artifacts2
 
       - name: Push NuGet package
         run: dotnet nuget push "./artifacts2/*.nupkg" --api-key $NUGET_AUTH_TOKEN --source https://api.nuget.org/v3/index.json
