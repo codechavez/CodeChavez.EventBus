@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>CodeChavez.EventBus.Abstractions</PackageId>
+		<Title>CodeChavez EventBus Abstractions Library</Title>
+		<Authors>Victor A Chavez</Authors>
+		<Product>CodeChavez.EventBus.Abstractions</Product>
+		<Version>9.0.0</Version>
+		<Copyright>2020-2025</Copyright>
+		<Description>It has all necessary interfaces to be implemented</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/codechavez/CodeChavez.EventBus.Abstractions</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/codechavez/CodeChavez.EventBus.Abstractions</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageTags>codechavez,event,bus,events,helpers,utilities,.net</PackageTags>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="CodeChavez.Common" Version="9.0.1" />
+	</ItemGroup>
+
+</Project>
