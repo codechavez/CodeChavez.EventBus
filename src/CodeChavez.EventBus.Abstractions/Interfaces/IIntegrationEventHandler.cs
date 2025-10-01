@@ -8,4 +8,3 @@ public interface IIntegrationEventHandler<in TIntegrationEvent> : IIntegrationEv
 }
 
 public interface IIntegrationEventHandler { }
-

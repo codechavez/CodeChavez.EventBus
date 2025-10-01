@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChavez.EventBus.Abstractions", "src\CodeChavez.EventBus.Abstractions\CodeChavez.EventBus.Abstractions.csproj", "{54618F5E-5C1B-4FE4-A4D8-C1CB2B10BB5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChavez.EventBus.Kafka", "src\CodeChavez.EventBus.Kafka\CodeChavez.EventBus.Kafka.csproj", "{E7157B25-9CE2-4B4B-B024-333BF200CA14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChavez.EventBus.RabbitMQ", "src\CodeChavez.EventBus.RabbitMQ\CodeChavez.EventBus.RabbitMQ.csproj", "{3F1A21B6-FD4E-4493-A25C-47E80B3822B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChavez.EventBus.MQTT", "src\CodeChavez.EventBus.MQTT\CodeChavez.EventBus.MQTT.csproj", "{8B56FBC1-440C-4479-A212-FB25F8251F0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54618F5E-5C1B-4FE4-A4D8-C1CB2B10BB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54618F5E-5C1B-4FE4-A4D8-C1CB2B10BB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54618F5E-5C1B-4FE4-A4D8-C1CB2B10BB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54618F5E-5C1B-4FE4-A4D8-C1CB2B10BB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7157B25-9CE2-4B4B-B024-333BF200CA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7157B25-9CE2-4B4B-B024-333BF200CA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7157B25-9CE2-4B4B-B024-333BF200CA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7157B25-9CE2-4B4B-B024-333BF200CA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1A21B6-FD4E-4493-A25C-47E80B3822B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1A21B6-FD4E-4493-A25C-47E80B3822B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1A21B6-FD4E-4493-A25C-47E80B3822B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1A21B6-FD4E-4493-A25C-47E80B3822B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B56FBC1-440C-4479-A212-FB25F8251F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B56FBC1-440C-4479-A212-FB25F8251F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B56FBC1-440C-4479-A212-FB25F8251F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B56FBC1-440C-4479-A212-FB25F8251F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EC7ECDF-0ACB-40A3-A27F-3599FBD516EA}
+	EndGlobalSection
+EndGlobal

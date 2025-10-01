@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>CodeChavez.EventBus.Kafka</PackageId>
+		<Title>CodeChavez EventBus Kafka Library</Title>
+		<Authors>Victor A Chavez</Authors>
+		<Product>CodeChavez.EventBus.Kafka</Product>
+		<Version>9.0.1</Version>
+		<Copyright>2020-2025</Copyright>
+		<Description>Stuff to connect to Kafka as a consumer or producer plus subcriptions</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/codechavez/CodeChavez.EventBus</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/codechavez/CodeChavez.EventBus</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageTags>codechavez,event,bus,events,consumer,producer,helpers,utilities,.net</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Confluent.Kafka" Version="2.11.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CodeChavez.EventBus.Abstractions\CodeChavez.EventBus.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>
