@@ -1,14 +1,14 @@
-﻿using MediatR;
+﻿//using MediatR;
 
-namespace CodeChavez.EventBus.Abstractions.EventNotifications;
+//namespace CodeChavez.EventBus.Abstractions.EventNotifications;
 
-public class DomainEventNotification<TDomainEvent> : INotification where TDomainEvent : DomainEvent
-{
-    public TDomainEvent DomainEvent { get; }
+//public class DomainEventNotification<TDomainEvent> : INotification where TDomainEvent : DomainEvent
+//{
+//    public TDomainEvent DomainEvent { get; }
 
-    public DomainEventNotification(TDomainEvent domainEvent)
-    {
-        DomainEvent = domainEvent;
-    }
-}
+//    public DomainEventNotification(TDomainEvent domainEvent)
+//    {
+//        DomainEvent = domainEvent;
+//    }
+//}
 
