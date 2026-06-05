@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>CodeChavez.EventBus.EventHub</PackageId>
+    <Title>CodeChavez EventBus EventHub Library</Title>
+    <Authors>Victor A Chavez</Authors>
+    <Product>CodeChavez.EventBus.EventHub</Product>
+    <Version>10.0.0-preview5</Version>
+    <Copyright>2026 Victor A Chavez</Copyright>
+    <Description>Stuff to connect to Azure EventHub as a consumer or producer plus subcriptions</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/codechavez/CodeChavez.EventBus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/codechavez/CodeChavez.EventBus</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageTags>codechavez,event,bus,event hub,events,consumer,producer,helpers,utilities,.net</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.12.2" />
+    <PackageReference Include="Azure.Messaging.EventHubs.Processor" Version="5.12.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodeChavez.EventBus.Abstractions\CodeChavez.EventBus.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
