@@ -1,5 +1,6 @@
 ﻿using Azure.Messaging.EventHubs;
 using Azure.Messaging.EventHubs.Processor;
+using Azure.Messaging.EventHubs.Producer;
 using CodeChavez.EventBus.Abstractions.Configurations;
 using CodeChavez.EventBus.Abstractions.Extensions;
 using CodeChavez.EventBus.EventHub.Interfaces;
@@ -24,7 +25,25 @@ public class EventHubConnection : IEventBusConnection
         _checkpointOptions = checkpointOptions.Value;
     }
 
-    public async Task<EventProcessorClient> GetProcessorClientAsync()
+    public async Task<EventHubProducerClient> GetProducerClientAsync()
+    {
+        var producer = new EventHubProducerClient(
+            _eventHubOptions.Hosts.GetString(),
+            _eventHubOptions.Topic,
+            new EventHubProducerClientOptions
+            {
+                RetryOptions = new EventHubsRetryOptions
+                {
+                    Mode = EventHubsRetryMode.Exponential,
+                    Delay = TimeSpan.FromSeconds(0.5),
+                    MaximumDelay = TimeSpan.FromSeconds(30),
+                    MaximumRetries = 3
+                }
+            });
+        return producer;
+    }
+
+    public async Task<EventProcessorClient> GetConsumerClientAsync()
     {
         var blobContainerClient = new Azure.Storage.Blobs.BlobContainerClient(
             _checkpointOptions.CheckpointConnectionString,
