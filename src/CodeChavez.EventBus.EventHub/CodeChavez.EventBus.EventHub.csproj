@@ -9,7 +9,7 @@
     <Title>CodeChavez EventBus EventHub Library</Title>
     <Authors>Victor A Chavez</Authors>
     <Product>CodeChavez.EventBus.EventHub</Product>
-    <Version>10.0.0-preview7</Version>
+    <Version>10.0.0-preview8</Version>
     <Copyright>2026 Victor A Chavez</Copyright>
     <Description>Stuff to connect to Azure EventHub as a consumer or producer plus subcriptions</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>

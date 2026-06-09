@@ -4,7 +4,7 @@ namespace CodeChavez.EventBus.Abstractions.Configurations;
 
 public record ServiceBusOptions
 {
-    public string ConnecitonString { get; set; } = string.Empty;
+    public string ConnectionString { get; set; } = string.Empty;
 
     /// <summary>
     /// The number of messages to prefetch from the broker in each poll. Must be between 1 and 10,000. Default is 5000.
@@ -32,5 +32,7 @@ public record ServiceBusOptions
     /// The topic to subscribe to for consuming messages. This should match the topic that producers are publishing to.
     /// </summary>
     public required string Topic { get; set; } = string.Empty;
+
+    public bool AutoComplete { get; set; } = true;
 
 }
