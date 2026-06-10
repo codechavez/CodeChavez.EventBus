@@ -33,6 +33,8 @@ public record ServiceBusOptions
     /// </summary>
     public required string Topic { get; set; } = string.Empty;
 
+    public required string Subscription { get; set; } =string.Empty;
+
     public bool AutoComplete { get; set; } = true;
 
 }
